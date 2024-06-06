@@ -10,6 +10,7 @@ return {
 			lspconfig.tsserver.setup {}
 			lspconfig.gopls.setup {}
 			lspconfig.lua_ls.setup {}
+			lspconfig.clangd.setup {}
 			lspconfig.rust_analyzer.setup {
 				-- Server-specific settings. See `:help lspconfig-setup`
 				settings = {
