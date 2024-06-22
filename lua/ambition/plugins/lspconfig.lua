@@ -8,7 +8,13 @@ return {
 			local lspconfig = require('lspconfig')
 			lspconfig.pyright.setup {}
 			lspconfig.tsserver.setup {}
-			lspconfig.gopls.setup {}
+			lspconfig.gopls.setup {
+				settings = {
+					gopls = {
+						usePlaceholders = "true",
+					},
+				},
+			}
 			lspconfig.lua_ls.setup {}
 			lspconfig.clangd.setup {}
 			lspconfig.rust_analyzer.setup {
